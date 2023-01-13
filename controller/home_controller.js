@@ -1,6 +1,6 @@
 module.exports.home=function(req,res){
         return res.render('home',{
-            title:"Log In Page"
+            title:"Register||Log In Page"
         });
     
 }

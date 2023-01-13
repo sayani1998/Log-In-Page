@@ -67,7 +67,7 @@ module.exports.creat=function(req,res){
     //get the profile page
     module.exports.creatSession = async function(req,res){
         try{
-            let user= await User.findOne({email:req.body.email});
+            let user= await User.findOne({name:req.body.name});
             if(user.password==req.body.password){
                 return res.redirect(`/users/profile/${user._id}`);
             }else{
